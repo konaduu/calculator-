@@ -1,0 +1,44 @@
+body{
+  background-color: #D3E0EA
+}
+
+nav{
+  background-color: #F1F6F9;
+  font-family: 'Gluten', cursive;
+}
+
+a{ margin-right: 10px;  
+   /* font-family: 'Dancing Script', cursive;; */
+   font-size:1.5em;
+} 
+
+  #main_page{
+      padding: 100px;
+  }
+
+  #Principal{
+    margin-right: 35px;
+  }
+
+  #navbarlinks{
+margin-left: 500px;
+
+  }
+
+  h1{
+    margin-bottom: 45px;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Gluten', cursive;
+  }
+
+  label{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  button{
+    font-family: 'Balsamiq Sans', cursive;
+  }
+ p{
+  /* font-family: 'Gluten', cursive; */
+  font-family: 'Balsamiq Sans', cursive;
+ }

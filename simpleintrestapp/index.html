@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleInterestApp</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Balsamiq+Sans:ital,wght@0,400;1,700&family=Gluten:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- <div class="container-fluid"> -->
+    <nav class="navbar navbar-expand-lg">
+      
+        <a class="navbar-brand" href="index.html" style="color: black" > 
+        <img src="images\calculator.svg" alt=" calculator" width="45" height="45" >
+        <!-- calc -->
+       </a>
+        <a class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navbarlinks" aria-controls="navbarlinks" aria-expanded="false" aria-label="Toggle navigation">
+         <img src="images\angle-down-solid.svg" width="30" height="30" alt="angle double-right">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarlinks">
+            <ul  class="navbar-nav">
+                <li class="">
+                <a class="nav-link" style="color: black;" href="index.html">Home</a>
+                </li>
+                <li class="">
+                <a class="nav-link" style="color: black;" href="elective.html">E-math</a>
+                </li>
+            </ul>
+        <!-- </div> -->
+
+    </nav>
+</div>
+    <!-- main stuff -->
+       <div id = main_page >
+          <h1 align = center >CALCULATE YOUR SIMPLE INTEREST HERE </h1>
+
+                <form  id="myForm"  onsubmit="return validateForm()" method="post">
+                    <div class="container">
+                      <p align = center >Please fill in this form to calculate the interest.</p>
+                      <div class="row justify-content-md-center">
+                        <div class="col-md-auto">
+                         <label for="Principal"><b>Principal</b></label>
+                         <input type="number" placeholder="Enter Principal" name="Principal" id="Principal">
+                        </div>
+                    </div>
+                      <br>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto">
+                            <label for="Rate"><b>Rate</b></label>
+                            <input type="number" placeholder="Enter Rate" name="Rate" id="Rate">
+                        </div>
+                    </div>
+                  <br>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-auto">
+                            <label for="Time"><b>Time</b></label>
+                            <input type="number" placeholder="Enter Time" name="Time" id="Time">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-12" align="center">
+                            <!-- <button type="button" class="btn btn-outline-dark" id="btn" onclick="calculate()">Calculate</button> -->
+                            <button type="button" class="btn btn-outline-dark btn-lg" id="btn" onclick="calculate()">Calculate</button>
+                        </div>
+                    <br>
+                    </div> 
+                  
+                  </form>
+                  <p id="result"> </p>
+     </div>
+    
+    
+  
+
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       <script src="index.js"></script>
+</body>
+</html>
